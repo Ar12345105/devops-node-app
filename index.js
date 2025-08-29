@@ -10,6 +10,7 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
+
 app.get('/healthz', (req, res) => {
   res.status(200).send('OK');
 });
