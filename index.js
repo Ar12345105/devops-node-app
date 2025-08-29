@@ -6,11 +6,10 @@ app.get('/', (req, res) => {
   res.send('Hello from DevOps Node App 🚀');
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
-
-
 app.get('/healthz', (req, res) => {
   res.status(200).send('OK');
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
